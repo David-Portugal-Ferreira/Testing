@@ -22,7 +22,7 @@ test("Calculator Operations", () => {
 });
 
 test("Ceaser Cipher", () => {
-  expect(ceaserCipher("Hello World", 3)).toBe("Khoor Zruog");
+  expect(ceaserCipher("Hello World!", 3)).toBe("Khoor Zruog!");
 });
 
 test("Analyze Array", () => {

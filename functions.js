@@ -34,8 +34,11 @@ exports.ceaserCipher = function ceaserCipher(str, factor) {
 
     for(let i = 0; i < str.length; i++) {
         let pos = arr.indexOf(strLower[i]);
-        if(pos < 0) {
+        if(pos < 0 && str[i] === " ") {
             resultString += " ";
+            continue;
+        } else if (pos < 0){
+            resultString += str[i];
             continue;
         }
         resultString += checkUpperCase(str[i], arr[pos + factor]);
